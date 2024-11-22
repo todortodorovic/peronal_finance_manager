@@ -1,0 +1,14 @@
+[package]
+name = "personal_finance_manager"
+version = "0.1.0"
+edition = "2021"
+description = "CLI aplikacija za upravljanje ličnim finansijama"
+authors = ["Todor Todorovic"]
+
+[dependencies]
+clap = { version = "4.0", features = ["derive"] }  # for CLI 
+rusqlite = "0.32.1"  # for work on SQLite database
+csv = "1.1"  
+serde = { version = "1.0", features = ["derive"] }  
+mongodb = "3.1.0"
+tokio = { version = "1.41.1", features = ["full"] }
